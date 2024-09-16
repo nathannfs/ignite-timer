@@ -12,11 +12,11 @@ export function Header() {
       <img src={logo} alt="" />
 
       <nav>
-        <NavLink to="/" title="Timer">
+        <NavLink to="/ignite-timer" end title="Timer">
           <Timer size={24} />
         </NavLink>
 
-        <NavLink to="/history" title="Histórico">
+        <NavLink to="/ignite-timer/history" end title="Histórico">
           <Scroll size={24} />
         </NavLink>
       </nav>

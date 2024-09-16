@@ -1,4 +1,5 @@
 {
+  "homepage": "https://nathannfs.github.io/ignite-timer",
   "name": "02-ignite-timer",
   "private": true,
   "version": "0.0.0",
@@ -30,6 +31,7 @@
     "@types/react-dom": "^18.3.0",
     "@types/styled-components": "^5.1.34",
     "@vitejs/plugin-react": "^4.3.1",
+    "gh-pages": "^6.1.1",
     "globals": "^15.9.0",
     "typescript": "^5.5.3",
     "vite": "^5.4.1"
