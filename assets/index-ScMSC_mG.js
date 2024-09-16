@@ -247,7 +247,7 @@ Error generating stack: `+o.message+`
 
   display: flex;
   justify-content: center;
-`;function lS(){const{activeCycle:e,markCurrentCycleAsFinished:t,amountSecondsPassed:n,setSecondsPassed:r}=N.useContext(Bo),i=e?e.minutesAmount*60:0;N.useEffect(()=>{let c;return e&&(c=setInterval(()=>{const f=cd(new Date,new Date(e.startDate));f>=i?(t(),r(i),clearInterval(c)):r(f)},1e3)),()=>{clearInterval(c)}},[e,i,t,r]);const o=e?i-n:0,s=Math.floor(o/60),a=o%60,l=String(s).padStart(2,"0"),u=String(a).padStart(2,"0");return N.useEffect(()=>{e&&(document.title=`Ignite Timer - ${l}:${u}`)},[l,u,e]),$.jsxs(sS,{children:[$.jsx("span",{children:l[0]}),$.jsx("span",{children:l[1]}),$.jsx(aS,{children:":"}),$.jsx("span",{children:u[0]}),$.jsx("span",{children:u[1]})]})}const uS=Ye.div`
+`;function lS(){const{activeCycle:e,markCurrentCycleAsFinished:t,amountSecondsPassed:n,setSecondsPassed:r}=N.useContext(Bo),i=e?e.minutesAmount*60:0;N.useEffect(()=>{let c;return e&&(c=setInterval(()=>{const f=cd(new Date,new Date(e.startDate));f>=i?(t(),r(i),clearInterval(c)):r(f)},1e3)),()=>{clearInterval(c)}},[e,i,t,r]);const o=e?i-n:0,s=Math.floor(o/60),a=o%60,l=String(s).padStart(2,"0"),u=String(a).padStart(2,"0");return N.useEffect(()=>{document.title=`Ignite Timer ${e?`- ${l}:${u}`:""}`},[l,u,e]),$.jsxs(sS,{children:[$.jsx("span",{children:l[0]}),$.jsx("span",{children:l[1]}),$.jsx(aS,{children:":"}),$.jsx("span",{children:u[0]}),$.jsx("span",{children:u[1]})]})}const uS=Ye.div`
   width: 100%;
   display: flex;
   align-items: center;
