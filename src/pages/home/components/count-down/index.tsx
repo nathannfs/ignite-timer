@@ -50,9 +50,7 @@ export function CountDown() {
   const seconds = String(secondsAmount).padStart(2, '0')
 
   useEffect(() => {
-    if (activeCycle) {
-      document.title = `Ignite Timer - ${minutes}:${seconds}`
-    }
+    document.title = `Ignite Timer ${activeCycle ? `- ${minutes}:${seconds}` : ''}`
   }, [minutes, seconds, activeCycle])
 
   return (
