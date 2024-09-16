@@ -12,7 +12,7 @@ export function Header() {
       <img src={logo} alt="" />
 
       <nav>
-        <NavLink to="/ignite-timer" end title="Timer">
+        <NavLink to="/ignite-timer/" end title="Timer">
           <Timer size={24} />
         </NavLink>
 
